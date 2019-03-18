@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body ng-app="directoryApp">
-<div id="header"></div>
 <div class="container">
     <div class="row">
         <h1>Login Portal</h1>
@@ -15,9 +15,9 @@
         <div class="col-md-6">
             </br>
             <!-- Display text box to add new listings -->
-            <div  ng-app ng-controller="loginUser" style="line-height: 10pt;">
-                Email:    <input type="text" ng-model="loginInfo.email" onClick="this.setSelectionRange(0, this.value.length)" /></br></br>
-                Password:    <input type="text" ng-model="loginInfo.password" onClick="this.setSelectionRange(0, this.value.length)" /></br></br>
+            <div  ng-app ng-controller="addListing" style="line-height: 10pt;">
+                Email:    <input type="text" ng-model="newListing.code" onClick="this.setSelectionRange(0, this.value.length)" /></br></br>
+                Password:    <input type="text" ng-model="newListing.name" onClick="this.setSelectionRange(0, this.value.length)" /></br></br>
                 <input type="submit" ng-click="login()" value="Add"></input>
                 </br></br>
             </div>
@@ -30,7 +30,5 @@
 <script src="js/app.js"></script>
 <script src="js/factories/portalMethods.js"></script>
 <script src="js/controllers/portalController.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="js/scripts/content.js"></script>
 </body>
 </html>
