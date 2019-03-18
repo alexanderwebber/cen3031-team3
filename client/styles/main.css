@@ -1,3 +1,8 @@
+body{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+}
+
 #searchBar {
   margin: 15px 10px;
 }
@@ -5,4 +10,106 @@
 .tableWrapper {
   max-height: 400px;
   overflow: auto;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #22bba8;
+  padding-bottom: 0;
+  margin-bottom: 0px;
+}
+
+.dropdown a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  left: 0;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn{
+  background-color: #9EE9DC;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d5a6bd;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-variant: small-caps;
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: #d5a6bd;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content{
+  padding: 0px 20px;
+}
+
+input[type=submit] {
+  background-color: #a3a3a3;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #b5b3b3;
+}
+
+ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.form input {
+  display: inline-block;
+  width: 200px;
+  position: relative;
+  top: -3em;
+}
+
+.form label {
+  display: inline-block;
+  width: 200px;
+  margin-right: .5em;
+  padding-top: 1.5em;
+  font-size: 10px;
 }
