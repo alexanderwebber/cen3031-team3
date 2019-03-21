@@ -9,25 +9,21 @@
 <body ng-app="portalApp">
 <div id="header"></div>
 <div class="content">
-    <div ng-controller="PortalController" class="login">
-        <div id="existingUser" ng-hide="showHere">
-            </br>
-            <!-- Display text box to add new listings -->
-            <div ng-app ng-controller="loginUser" style="line-height: 10pt;">
-                <div class="form">
-                    <ul>
-                        <li><h2>Current User</h2></li>
-                        <li><label>Email<input ng-model="loginInfo.email" type="email" data-component="email"></label>                        </li>
-                        <li><label>Password<input ng-model="loginInfo.password" type="text"></label></li>
-                    </ul>
-                </div>
-                <input type="submit" onclick="location.href='http://localhost:8080/adminportal.html';" value="Login"/>
-                </br></br>
+    <div class="container">
+        <form ng-submit-"login(username, password)">
+            <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" type="text" ng-model="email">
             </div>
-            <a href="#" ng-click="showHere = true">New User?</a>
-        </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input class="form-control" type="password" ng-model="password">
+            </div>
+            <input class="btn btn-success btn-lg btn-block" type="submit" value="Login">
+        </form>
+    </div>
+        
         <div id="newUser" ng-show="showHere">
-            </br>
             <!-- Display text box to add new listings -->
             <div ng-app ng-controller="newUser" style="line-height: 10pt;">
                 <div class="form">

@@ -17,12 +17,10 @@ angular.module('portal_collections').controller('PortalController', ['$scope', '
 
         };
 
-        $scope.loginUser = function() {
-
-            $scope.loginInfo = {
-                email: "yourname@email.com",
-                password: "u$3stRongP@ssWo12d!"
-            }
+        $scope.login = function(username, password) {
+            UserSvc.login(username, password).then(function (user) { 
+                console.log(user)
+            })
         };
 
         $scope.newUser = function() {};
